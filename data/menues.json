@@ -1,0 +1,156 @@
+[
+    {
+        "menuType": "regular",
+        "dishType": "main",
+        "name": "Khaled Bhuna",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "main",
+        "name": "Emad Bhuna",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "main",
+        "name": "Hasan Bhuna",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "main",
+        "name": "Shutki Bhuna",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "main",
+        "name": "Puti Bhuna",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "main",
+        "name": "Bridy Bhuna",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "main",
+        "name": "Tengra Bhuna",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "main",
+        "name": "Rui Bhuna",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "main",
+        "name": "Shak Bhuna",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "main",
+        "name": "Chicken Bhuna",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "main",
+        "name": "Beef Bhuna",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "desert",
+        "name": "RosoGulla",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "desert",
+        "name": "Dhai",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    },
+    {
+        "menuType": "regular",
+        "dishType": "desert",
+        "name": "KaloJamon",
+        "images": [
+            "images/card1.jpg",
+            "images/card2.jpg"
+        ],
+        "price": 19.19,
+        "ingredients": "Mushroom | Garlic | Veggies"
+    }
+]

@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modinah Grill</title>
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- <link rel="stylesheet" href="styles/bootstrap.css"> -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair Display|Rancho|Merriweather+Sans|Cairo|Grenze|Noto Serif|Arimo|Poppins|Roboto+Condensed|Kanit|Farro|Russo One|Paytone One|Roboto+Slab&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="top-container hide">
+    <div class="top-header">
+      <div class="top-tittle">
+        <a href="#home">
+          <i class="fa fa-map-marker"></i> 157 White Oak Drive Kansas City</a>
+        <div class="top-tittle-right">
+          <a href="#search">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#about">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#about">
+            <i class="fa fa-pinterest"></i>
+          </a>
+          <a href="#about">
+            <i class="fa fa-google-plus"></i>
+          </a>
+          <a href="#about">
+            |
+          </a>
+          <a href="#about">
+            <i class="fa fa-user"></i> My Account
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-bg" id="home">
+    <div class="bg-header1">
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="logo">
+          <img src="images/logo12.png">
+        </a>
+        <div class="right">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#reservation">Reservation</a>
+          <a href="#contact">Contact</a>
+          <a href="#menu">Menu</a>
+          <a href="#cart">
+            <span onclick="openNav()" id="main">
+              <i class="fa fa-cart-plus"></i> Cart</span>
+          </a>
+
+          <a href="#search">
+            <i class="fa fa-search" class="openBtn" onclick="openSearch()">
+            </i>
+          </a>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="cart-items">
+          <div class="card-row">
+            <div class="card-image-column">
+              <img src="images/card1.jpg" style="width:100%" alt="Jane">
+            </div>
+            <div class="card-item-column">
+              <div class="card-menu">
+                <h3>ITALIAN SOURCE MUSHROOM</h3>
+                <p>1 &times 19.9
+                  <span style="float:right;font-size:16px;">$19.9</span>
+                </p>
+                <div class="btn-group">
+                  <button>+</button>
+                  <button>1</button>
+                  <button>-</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-row">
+            <div class="card-image-column">
+              <img src="images/card3.jpg" style="width:100%" alt="Jane">
+            </div>
+            <div class="card-item-column">
+              <div class="card-menu">
+                <h3>ITALIAN SOURCE MUSHROOM</h3>
+                <p>1 &times 19.9
+                  <span style="float:right;font-size:16px;">$19.9</span>
+                </p>
+                <div class="btn-group">
+                  <button>+</button>
+                  <button>1</button>
+                  <button>-</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-row">
+            <div class="card-image-column">
+              <img src="images/card2.jpg" style="width:100%" alt="Jane">
+            </div>
+            <div class="card-item-column">
+              <div class="card-menu">
+                <h3>ITALIAN SOURCE MUSHROOM</h3>
+                <p>1 &times 19.9
+                  <span style="float:right;font-size:16px;">$19.9</span>
+                </p>
+                <div class="btn-group">
+                  <button>+</button>
+                  <button>1</button>
+                  <button>-</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-row">
+            <div class="card-image-column">
+              <img src="images/card3.jpg" style="width:100%" alt="Jane">
+            </div>
+            <div class="card-item-column">
+              <div class="card-menu">
+                <h3>ITALIAN SOURCE MUSHROOM</h3>
+                <p>1 &times 19.9
+                  <span style="float:right;font-size:16px;">$19.9</span>
+                </p>
+                <div class="btn-group">
+                  <button>+</button>
+                  <button>1</button>
+                  <button>-</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-bottom">
+          <div class="sub-total">Subtotal:
+            <span style="float: right;"> $150.17</span>
+          </div>
+          <div class="button">Checkout</div>
+        </div>
+      </div>
+      <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+          <form action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bg-container">
+      <img src="images/slider1-icon.png">
+      <div class="bg-text">
+        <p>Welcome to Modina Grill</p>
+        <h3>Let Enjoy The Rhym Of Modina Dishes</h3>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+  </div>
+  <div class="row-container" id="about">
+    <div class="row">
+      <div class="people-column1">
+      </div>
+      <div class="people-column header-container">
+        <h2>
+          <span class="align"></span>Our Story</h2>
+        <p style="padding:30px 0px;">Modina Grill is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon's Exmouth Market.
+          With glazed frontage on two sides of the building, overlooking the market and a bustling.
+        </p>
+        <p>
+          <span class="dott"></span> Modina Grill is a restaurant, bar and coffee roastery located</p>
+        <p>
+          <span class="dott"></span>
+          Modina Grill is a restaurant, bar and coffee </p>
+        <p>
+          <span class="dott"></span>
+          Modina Grill is a restaurant, bar and coffee roastery located</p>
+        <p>
+          <span class="dott"></span>
+          restaurant, bar and coffee roastery located</p>
+      </div>
+    </div>
+  </div>
+  <div class="bg">
+    <div class="bg-header">
+      <h2>
+        <span class="align"></span>Menu Hot</h2>
+    </div>
+    <div class="rrow">
+      <div class="column">
+        <div class="anim">
+          <img src="images/card1.jpg" alt="Jane" style="width:100%">
+          <div class="container">
+            <h2>ITALIAN SOURCE MUSHROOM</h2>
+            <p>
+              <span style="color: #E44C2A;font-weight: 600;font-size:13px;">$19.9</span>
+              <span class="icon-first">
+                <span>
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fas fa-heart"></i>
+                </span>
+              </span>
+            </p>
+            <p>
+              <button class="button" id="myBtn">Details</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="myModal" class="popup-modal">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <div class="popup-row">
+            <div class="popup-column">
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="images/product-2a.jpg" style="width:100%;height:300px;">
+                </div>
+                <div class="mySlides fade">
+                  <img src="images/product-2c.jpg" style="width:100%;height:300px;">
+                </div>
+                <div class="mySlides fade">
+                  <img src="images/product-2d.jpg" style="width:100%;height:300px;">
+                </div>
+                <div class="mySlides fade">
+                  <img src="images/product-2f.jpg" style="width:100%;height:300px;">
+                </div>
+                <div class="mySlides fade">
+                  <img src="images/product-2e.jpg" style="width:100%;height:300px;">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              <div style="text-align:center;">
+                <span class="dot anim" onmouseover="currentSlide(1)">
+                  <img src="images/product-2a.jpg">
+                </span>
+                <span class="dot anim" onmouseover="currentSlide(2)">
+                  <img src="images/product-2c.jpg">
+                </span>
+                <span class="dot anim" onmouseover="currentSlide(3)">
+                  <img src="images/product-2d.jpg">
+                </span>
+                <span class="dot anim" onmouseover="currentSlide(4)">
+                  <img src="images/product-2f.jpg">
+                </span>
+              </div>
+            </div>
+            <div class="popup-column">
+              <div class="popup-text">
+                <h4>WOOD CHAIR
+                  <span class="box">10% OFF</span>
+                </h4>
+                <span class="price">$299</span>
+              </div>
+              <div class="popup-para">
+                <p style="border-top:1px solid rgba(0,0,0,0.1);border-bottom: 1px solid rgba(0,0,0,0.1);">Designer :
+                  <span style="color:#bb0000">ABC Art</span>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus ligula a scelerisque gravida.
+                  Nullam laoreet tortor ac maximus alique met, consectetur adipiscing elit. Vestibulum finibus ligula a scelerisque
+                  gravida. Nullam
+                </p>
+                <span>
+                  <select>
+                    <option value="books">1</option>
+                    <option value="html">2</option>
+                    <option value="css">3</option>
+                    <option value="css">4</option>
+                  </select>
+                </span>
+                <button class="add-button">ADD TO CART</button>
+
+              </div>
+              <div class="popup-header">
+                <h6>DELIVERY INFORMATION</h6>
+                <p class="popup-para " style="font-size: 12px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus ligula a scelerisque gravida.
+                  Nullam laoreet tortor ac maximus</p>
+                <h6>SHIPPING & RETURNS</h6>
+                <h6>SHARE THIS PRODUCT</h6>
+              </div>
+              <div class="iconn ">
+                <span>
+                  <i class="fa fa-facebook "></i>
+                </span>
+                <span>
+                  <i class="fa fa-twitter "></i>
+                </span>
+                <span>
+                  <i class="fa fa-tumblr "></i>
+                </span>
+                <span>
+                  <i class="fa fa-youtube-play "></i>
+                </span>
+                <span>
+                  <i class="fa fa-dribbble "></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="anim">
+          <img src="images/card2.jpg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>CRAB WITH CURRY SOURCES
+            </h2>
+            <span style="color: #E44C2A;font-weight:600;font-size:13px;">$19.9</span>
+            <span class="icon-first">
+              <span>
+                <i class="fas fa-heart "></i>
+              </span>
+              <span>
+                <i class="fas fa-heart "></i>
+              </span>
+              <span>
+                <i class="fas fa-heart "></i>
+              </span>
+              <span>
+                <i class="fas fa-heart "></i>
+              </span>
+              <span>
+                <i class="fas fa-heart "></i>
+              </span>
+            </span>
+            <p>
+              <button class="button">Details</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="anim">
+          <img src="images/card3.jpg " alt="John " style="width:100% ">
+          <div class="container">
+            <h2>PORK WITH ITALIAN SALSA
+            </h2>
+            <span style="color: #E44C2A;font-weight: 600;font-size:13px;">$19.9</span>
+            <span class="icon-first">
+              <span>
+                <i class="fas fa-heart "></i>
+              </span>
+              <span>
+                <i class="fas fa-heart "></i>
+              </span>
+              <span>
+                <i class="fas fa-heart "></i>
+              </span>
+              <span>
+                <i class="fas fa-heart "></i>
+              </span>
+              <span>
+                <i class="fas fa-heart "></i>
+              </span>
+            </span>
+            <p>
+              <button class="button ">Details</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+  <div class="find-container header-container" id="menu">
+    <div class="tittle-section">Find About</div>
+    <h2>
+      <span class="align"></span>Our Menu</h2>
+    <!-- start tab content -->
+    <div class="tab">
+      <div class="menu-header">
+        <ul class="menu-tab">
+          <li>
+            <a href="#allMenu" class="tablinks" onclick="openTab(event,'allMenu', '', 'allMenuGrid')" id="defaultOpen">All Menu</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="actives">STARTERS</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#mainMenu" class="tablinks" onclick="openTab(event, 'mainMenu', 'main', 'mainMenuGrid')">MAIN</a>
+          </li>
+          <li>
+            <a href="#desertMenu" class="tablinks" onclick="openTab(event, 'desertMenu', 'desert', 'desertMenuGrid')">DESERTS</a>
+          </li>
+          <li>
+            <a href="#fastfoodMenu" class="tablinks" onclick="openTab(event, 'fastfoodMenu', 'fastfood', 'fastfoodMenuGrid')">FASTFOOD</a>
+          </li>
+          <li>
+            <a href="#coffeeMenu" class="tablinks" onclick="openTab(event, 'coffeeMenu', 'coffee', 'coffeeMenuGrid')">COFFER</a>
+          </li>
+          <li>
+            <a href="#">DRINKS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="allMenu" class="tabcontent">
+      <div class="tab-container">
+        <div class="tab-header">
+          <div class="tab-row" id="allMenuGrid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mainMenu" class="tabcontent">
+      <div class="tab-container">
+        <div class="tab-header">
+          <div class="tab-row" id="mainMenuGrid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="desertMenu" class="tabcontent">
+      <div class="tab-container">
+        <div class="tab-header">
+          <div class="tab-row" id="desertMenuGrid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fastfoodMenu" class="tabcontent">
+      <div class="tab-container">
+        <div class="tab-header">
+          <div class="tab-row" id="fastfoodMenuGrid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="coffeeMenu" class="tabcontent">
+      <div class="tab-container">
+        <div class="tab-header">
+          <div class="tab-row" id="coffeeMenuGrid"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end tab content -->
+    <!-- <div class="menu-container">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-image">
+            <img src="images/cart1.png">
+          </div>
+          <div class="menu-text">
+            <div class="menu-description">
+              <div class="menu-title">
+                ITALIAN SOURCE MUSHROOM
+              </div>
+            </div>
+            <div class="menu-subtext">
+              Mushroom | Garlic | Veggies
+            </div>
+          </div>
+          <div class="menu-price">
+            $19.9
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-image">
+            <img src="images/cart2.png">
+          </div>
+          <div class="menu-text">
+            <div class="menu-description">
+              <div class="menu-title">
+                TUNA ROAST SOURCE</div>
+            </div>
+            <div class="menu-subtext">
+              Tuna | Potatoes | Rice</div>
+          </div>
+          <div class="menu-price">
+            $19.9
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-image">
+            <img src="images/cart3.png">
+          </div>
+          <div class="menu-text">
+            <div class="menu-description">
+              <div class="menu-title">
+                FRIED POTATOES WITH GARLIC</div>
+            </div>
+            <div class="menu-subtext">
+              Potatoes | Olive Oil | Garlic</div>
+          </div>
+          <div class="menu-price">
+            $19.9
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-image">
+            <img src="images/cart4.png">
+          </div>
+          <div class="menu-text">
+            <div class="menu-description">
+              <div class="menu-title">
+                ROAST PORK (4 STICKS)</div>
+            </div>
+            <div class="menu-subtext">
+              Pork | Veggies | Shoyu</div>
+          </div>
+          <div class="menu-price">
+            $19.9
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-image">
+            <img src="images/cart1.png">
+          </div>
+          <div class="menu-text">
+            <div class="menu-description">
+              <div class="menu-title">
+                SALTED FRIED CHICKEN</div>
+            </div>
+            <div class="menu-subtext">
+              Chicken | Olive Oil | Salt</div>
+          </div>
+          <div class="menu-price">
+            $19.9
+          </div>
+        </div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-image">
+            <img src="images/cart6.png">
+          </div>
+          <div class="menu-text">
+            <div class="menu-description">
+              <div class="menu-title">
+                CRAB WITH CURRY SOURCES
+              </div>
+              <div class="menu-subtext">
+                Crab | Potatoes | Veggies
+              </div>
+            </div>
+          </div>
+          <div class="menu-price">
+            $19.9
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-image">
+            <img src="images/cart7.png">
+          </div>
+          <div class="menu-text">
+            <div class="menu-description">
+              <div class="menu-title">
+                IMPORTED SALMON STEAK</div>
+            </div>
+            <div class="menu-subtext">
+              Salmon | Veggies | Oil</div>
+          </div>
+          <div class="menu-price">
+            $19.9
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-image">
+            <img src="images/cart8.png">
+          </div>
+          <div class="menu-text">
+            <div class="menu-description">
+
+              <div class="menu-title">
+                BAKED POTATO PIZZA</div>
+            </div>
+            <div class="menu-subtext">
+              Potato | Bread | Cheese</div>
+          </div>
+          <div class="menu-price">
+            $19.9
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-image">
+            <img src="images/cart9.png">
+          </div>
+          <div class="menu-text">
+            <div class="menu-description">
+              <div class="menu-title">
+                PORK WITH ITALIAN SALSA</div>
+            </div>
+            <div class="menu-subtext">
+              Pork | Tomatoes | Veggies</div>
+          </div>
+          <div class="menu-price">
+            $19.9
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-image">
+            <img src="images/cart10.png">
+          </div>
+          <div class="menu-text">
+            <div class="menu-description">
+              <div class="menu-title">
+                FRESH CRAB WITH LEMON</div>
+            </div>
+            <div class="menu-subtext">
+              Crab | Lemon | Garlic</div>
+          </div>
+          <div class="menu-price">
+            $19.9
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <div class="gallery">
+    <div class="gallery-container">
+      <div class="tittle-section" style="padding-top:98px;">Discover</div>
+      <div class="header-container">
+        <h2>
+          <span class="align"></span>Gallery Photo
+        </h2>
+      </div>
+      <div class="menu-header">
+        <ul class="menu-tab">
+          <li>
+            <a href="#">
+              <span class="actives">ALL GALLERY</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" style="color:#999999;"> FINE DINING</a>
+          </li>
+          <li>
+            <a href="#" style="color:#999999;">COFFEE SHOP</a>
+          </li>
+          <li>
+            <a href="#" style="color:#999999;">DRINK & BAR</a>
+          </li>
+          <li>
+            <a href="#" style="color:#999999;">CATERING SERVICE</a>
+          </li>
+        </ul>
+      </div>
+      <div class="gallery-header">
+        <div class="gallery-tittle zoom">
+          <img src="images/portfolio1.jpg" style="width:100%">
+          <img src="images/portfolio10.jpg" style="width:100%">
+        </div>
+        <div class="gallery-tittle">
+          <img src="images/portfolio3.jpg" style="width:100%">
+          <img src="images/portfolio8.jpg" style="width:100%">
+        </div>
+        <div class="gallery-tittle">
+          <img src="images/portfolio4.jpg" style="width:100%">
+          <img src="images/portfolio7.jpg" style="width:100%">
+        </div>
+      </div>
+      <button class="btn">view all gallery</button>
+    </div>
+  </div>
+  <div class="flex-container" style="background: white;" id="contact">
+    <div class="contact-container">
+      <div class="contact-row">
+        <div class="contact-column">
+          <Img src="images/contactimage.png">
+        </div>
+        <div class="contact-column seat">
+          <div class="tittle-section">Well come to Sumi Restaurant
+          </div>
+          <div class="contact-text">
+            <span style="color:#999999;"> Monday to Tuesday</span> 09:00 AM - 22:00 PM
+            <span style="color:#999999;">| Friday to Sunday</span> 11:00 AM - 20:00 PM
+          </div>
+          <p class="contact-header">+647 968 5363</p>
+          <div class="form-row">
+            <div class="form-column">
+              <form action="">
+                <div class="input-container">
+                  <i class="fa fa-user icon"></i>
+                  <input class="input-field" type="text" placeholder="Your email" name="email" id="userName">
+                </div>
+                <div class="error" id="error"></div>
+
+                <div class="input-container">
+                  <i class="fa fa-phone icon"></i>
+                  <input class="input-field" type="text" placeholder="Your phone" name="email" id="phone">
+                </div>
+                <div class="error" id="phonevalid"></div>
+                <div id="selectError" class="error"></div>
+                <!-- </form> -->
+            </div>
+            <div class="form-column">
+              <div class="input-container">
+                <i class="fa fa-calendar icon"></i>
+                <input class="input-field" type="date" placeholder="" name="bdaytime">
+              </div>
+              <div class="input-container">
+                <i class="fa fa-share-alt icon"></i>
+                <input class="input-field" type="text" placeholder="Seat" name="email">
+              </div>
+            </div>
+            <div style="width:100%;text-align: center;">
+              <button class="btn" style="margin: 30px 0px ">BOOKING NOW</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="contact-container">
+      <div class="header-container" style="margin-bottom:30px;">
+        <h2>
+          <span class="align"></span>Our Customers Say
+        </h2>
+      </div>
+      <div class="gallery-header">
+        <div class="gallery-tittle">
+          <div class="avatar-container">
+            <img src="images/profile3.jpeg" class="avatar">
+          </div>
+          <p class="profile-cart"> "A great Template for my website, my first reason is the design but I would have put all of them. One of the best
+            templates I found, very easy to install...a very good template. Thank NthPsd
+          </p>
+          <div class="profile-author">
+            Eugene Fernandez
+          </div>
+        </div>
+        <div class="gallery-tittle">
+          <div class="avatar-container">
+            <img src="images/profile2.jpeg" class="avatar">
+          </div>
+          <p class="profile-cart"> "A great Template for my website, my first reason is the design but I would have put all of them. One of the best
+            templates I found, very easy to install...a very good template. Thank NthPsd
+          </p>
+          <div class="profile-author">
+            Ferdowsi Rumi
+          </div>
+        </div>
+        <div class="gallery-tittle">
+          <div class="avatar-container">
+            <img src="images/profile5.jpeg" class="avatar">
+          </div>
+          <p class="profile-cart"> "A great Template for my website, my first reason is the design but I would have put all of them. One of the best
+            templates I found, very easy to install...a very good template. Thank NthPsd
+          </p>
+          <div class="profile-author">
+            Farzana Urmi
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="contact-container" style="margin:0px auto;box-shadow: 0px 1px 38px 0px rgba(0, 0, 0, 0.13);">
+      <div class="gallery-header">
+        <div class="gallery-tittle">
+          <div class="news-text">
+            <h1>Latest
+              <br>
+              <span style="font-size:59px;color:#333333;">News</span>
+            </h1>
+            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+          </div>
+        </div>
+        <div class="gallery-tittle" style="background: #F5F5F5;">
+          <div class="news-text">
+            <P>19 September, 2016</P>
+            <h2>
+              White chocolate & cookies
+            </h2>
+            <p style="margin-bottom:50px;">Aenean condimentum commodo mattis viverra erat volutpat.</p>
+            <p>
+              <span style="color:#E44C2A;font-weight: bold;">READ MORE - </span>
+            </p>
+          </div>
+        </div>
+        <div class="gallery-tittle">
+          <img src="images/portfolio1.jpg" style="width:100%">
+        </div>
+      </div>
+      <div class="gallery-header">
+        <div class="gallery-tittle">
+          <img src="images/newsimage.jpg">
+        </div>
+        <div class="gallery-tittle">
+          <div class="news-text">
+            <P>19 September, 2016</P>
+            <h2>You don't need a sliver</h2>
+            <p style="margin-bottom:50px;">Aenean condimentum commodo mattis viverra erat volutpat.</p>
+            <p>
+              <span style="color:#E44C2A;font-weight: bold;">READ MORE - </span>
+            </p>
+          </div>
+        </div>
+        <div class="gallery-tittle">
+          <img src="images/newsimage1.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mapouter">
+    <div class="gmap_canvas">
+      <div class="shadow"></div>
+      <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=3000%20Danforth%20Avenue&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <a href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/">nord vpn coupon</a>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="contact-container">
+      <div class="gallery-header">
+        <div class="gallery-tittle">
+          <div class="footer-header rumi">
+            <h2>ABOUT US</h2>
+            <P>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</P>
+            <p>
+              <i class="fa fa-map-marker"></i> 203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+            <p>
+              <i class="fa fa-envelope"></i> Email us: company@domain.com</p>
+            <p>
+              <i class="fa fa-phone"></i> Call us: 0084 962 216 601</p>
+          </div>
+        </div>
+        <div class="gallery-tittle">
+          <div class="footer-header footer-text">
+            <h2>USER LINKS</h2>
+            <P>
+              <i class="fa fa-facebook"></i> Facebook</P>
+            <p>
+              <i class="fa fa-twitter"></i> Twitter</p>
+            <p>
+              <i class=" fa fa-google-plus"></i> Google+</p>
+            <p>
+              <i class="fa fa-linkedin"></i> Linkdin</p>
+          </div>
+        </div>
+        <div class="gallery-tittle  footer-open" id="reservation">
+          <div class="footer-header">
+            <h3>Open Hours</h3>
+            <div class="footer-row">
+              <div class="contactt-column footer-open-text">
+                <p>Monday</p>
+                <p>Tuesday</p>
+                <p>Wednessday</p>
+                <p>Thrusday</p>
+                <p>Friday</p>
+                <p>Saturday</p>
+                <p>Sunday</p>
+              </div>
+              <div class="contactt-column footer-open-text">
+                <p>9am - 5pm</p>
+                <p>9am - 5pm</p>
+                <p>9am - 5pm</p>
+                <p>9am - 5pm</p>
+                <p>9am - 5pm</p>
+                <p>9am - 5pm</p>
+                <p>OFF</p>
+              </div>
+            </div>
+            <h3>Reservation Number</h3>
+            <h4 class="header-4">647-5695363</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="top-container">
+    <div class="top-tittle1">
+      developed by: Ferdowsi,
+      <a target="_blank" href="http://ferdowsirumi.github.io">see profile</a>
+    </div>
+  </div>
+  </div>
+
+
+  <script src="data/menues.js"></script>
+  <script src="script.js "></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+    crossorigin="anonymous "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
+    crossorigin="anonymous "></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+    crossorigin="anonymous "></script>
+</body>
+
+</html>
